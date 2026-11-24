@@ -1,8 +1,20 @@
 npm create vite@latest 
-cd store-client
+- nameProject
+- React
+- TypeScript
+- линтер любой
+- Yes 
+cd nameProject
 npm install
 
 npm run dev
+
+
+
+
+
+
+
 
 UI = F(state)
 F-функция рендеринга
@@ -33,3 +45,11 @@ useReducer()-сложное состояние
 массив из текущего state и функции dispatch (отправить)
 с помощью dispatch отправляесм действия что нужно нужно
 сделать со state
+
+npm create vite@latest 
+- router-app
+-react 
+- TypeScript
+cd router-app
+npm install
+npm install react-router-dom

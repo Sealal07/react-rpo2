@@ -1,0 +1,32 @@
+.machine{
+    width: 320px;
+    margin: 40px auto;
+    padding:  24px;
+    border-radius: 16px;
+    background: linear-gradient(145deg, #242424, #1a1a1a);
+    color: #f1f1f1;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    font-family: system-ui, sans-serif;
+}
+.title{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+.indicator{
+    position: relative;
+    height: 180px;
+    border: 2px solid #555;
+    border-radius: 8px;
+    background: #111;
+    overflow: hidden;
+}
+.waterFill{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, #2196f3, #64b5f6);
+    transition: height 0.4s; 
+
+}

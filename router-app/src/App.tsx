@@ -3,6 +3,9 @@ import { DashboardPage } from "./pages/DashboardPage";
 import { RoomsPage } from "./pages/RoomsPage";
 import { NotFoundPage } from "./pages/NotFoundPage";
 import { RoomDetailPage } from "./pages/RoomDetailPage";
+import { RoomSensorTab } from "./pages/room/RoomSensorTab";
+import { RoomLogsTab } from "./pages/room/RoomLogsTab";
+import { RoomScenariosTab } from "./pages/room/RoomScenariosTab";
 
 export function App(){
   return (
@@ -26,7 +29,12 @@ export function App(){
         <Routes>
           <Route path="/" element={<DashboardPage />} />
           <Route path="/rooms" element={<RoomsPage />} />
-          <Route path="/rooms/:roomId" element={<RoomDetailPage />} />
+          <Route path="/rooms/:roomId" element={<RoomDetailPage />}>
+              <Route index element={<RoomSensorTab />} />
+              <Route path="sensors" element={<RoomSensorTab />} />
+              <Route path="logs" element={<RoomLogsTab />} />
+              <Route path="scenarios" element={<RoomScenariosTab />} />
+          </Route>
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>
